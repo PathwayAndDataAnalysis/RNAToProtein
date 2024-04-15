@@ -1,0 +1,10 @@
+{
+  "data_root_dir": "./data",
+  "generated_data_dir": "generated",
+
+  "single_cell_rna_file": "normalized_humanized_mat.tsv",
+  "tumor_rna_counts": "tumor_rna_counts_X.tsv",
+  "proteomic_data_dir": "BroadProteomicData",
+  "var_map": "var_map.tsv",
+  "single_cell_normalization_method": "total"
+}
