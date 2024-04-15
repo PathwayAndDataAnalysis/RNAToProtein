@@ -1,0 +1,23 @@
+altgraph @ file:///AppleInternal/Library/BuildRoots/9dd5efe2-7fad-11ee-b588-aa530c46a9ea/Library/Caches/com.apple.xbs/Sources/python3/altgraph-0.17.2-py2.py3-none-any.whl
+contourpy==1.2.0
+cycler==0.12.1
+fonttools==4.49.0
+future @ file:///AppleInternal/Library/BuildRoots/9dd5efe2-7fad-11ee-b588-aa530c46a9ea/Library/Caches/com.apple.xbs/Sources/python3/future-0.18.2-py3-none-any.whl
+importlib_resources==6.1.2
+joblib==1.3.2
+kiwisolver==1.4.5
+macholib @ file:///AppleInternal/Library/BuildRoots/9dd5efe2-7fad-11ee-b588-aa530c46a9ea/Library/Caches/com.apple.xbs/Sources/python3/macholib-1.15.2-py2.py3-none-any.whl
+matplotlib==3.8.3
+numpy==1.26.4
+packaging==23.2
+pandas==2.2.1
+pillow==10.2.0
+pyparsing==3.1.1
+python-dateutil==2.9.0.post0
+pytz==2024.1
+scikit-learn==1.4.1.post1
+scipy==1.12.0
+six @ file:///AppleInternal/Library/BuildRoots/9dd5efe2-7fad-11ee-b588-aa530c46a9ea/Library/Caches/com.apple.xbs/Sources/python3/six-1.15.0-py2.py3-none-any.whl
+threadpoolctl==3.3.0
+tzdata==2024.1
+zipp==3.17.0
