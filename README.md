@@ -1,7 +1,7 @@
 # RNAToProtein
 A linear regression framework for predicting proteomic values from transcriptomic data.
 
-VERVIEW
+OVERVIEW
 --------
 The goal of this project is to predict protein values for single cells based on their RNA counts.
 The program works as follows by building a model from RNA and Protein samples measure for
