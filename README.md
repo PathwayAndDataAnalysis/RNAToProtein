@@ -19,11 +19,21 @@ adjustment factor and multiply the single cell counts with it to try to address 
 issue. This factor is called the "Normalization factor" in the code and can be calculated
 using the calc-normalization-factor command of the program.
 
+PREREQUISITE
+------------
+You must have the following files stored in a directory to which the program has access to
+and set the value of the data_root_directory in the config json file to that directory.
+
+    - BroadProteomicData.zip
+    - normalized_humanized_mat.tsv
+    - tumor_rna_counts_X.tsv
+    - var_map.tsv
+
 HOW TO EXECUTE
 --------------
 The program supports five different commands. The following is how the program is executed:
 
-    prot_predictor  <command>   <options>
+    rna_to_protein  <command>   <options>
 
 Supported commands and options:
 
@@ -39,7 +49,7 @@ Supported commands and options:
             --config
                 The file containing the program's global configuration values
         Example:
-            python3 prot_predictor prepare \
+            python3 rna_to_protein prepare \
                 --config /Users/joe/config.json
 
     --------------------------------------------------------------------------------
@@ -59,7 +69,7 @@ Supported commands and options:
                 The file containing the program's global configuration values
 
         Example:
-            python3 prot_predictor extract \
+            python3 rna_to_protein extract \
                 --config /Users/joe/config.json \
                 --prot_ids NP_892006.3 NP_958782.1 \
                 --output_dir /tmp/output_1
@@ -78,7 +88,7 @@ Supported commands and options:
             --config
                 The file containing the program's global configuration values
         Example:
-            python3 prot_predictor model \
+            python3 rna_to_protein model \
                 --config ~/config.json \
                 --prot_ids NP_892006.3  NP_958782.1 NP_002464.1
 
@@ -95,7 +105,7 @@ Supported commands and options:
             --config
                 The file containing the program's global configuration values
         Example:
-            python3 prot_predictor calc-normalization-factor \
+            python3 rna_to_protein calc-normalization-factor \
                 --config /Users/joe/config.json
 
     --------------------------------------------------------------------------------
@@ -110,7 +120,7 @@ Supported commands and options:
             --config
                 The file containing the program's global configuration values
         Example:
-            python3 prot_predictor prep-single-cell \
+            python3 rna_to_protein prep-single-cell \
                 --config /Users/joe/config.json \
 
     --------------------------------------------------------------------------------
@@ -131,7 +141,7 @@ Supported commands and options:
             --config
                 The file containing the program's global configuration values
         Example:
-            python prot_predictor predict-single-cell \
+            python rna_to_protein predict-single-cell \
                 --config /Users/joe/config.json \
                 --prot_ids  NP_000436.2 NP_112598.3 NP_001333374.1 \
                 --cell_ids BPK.12x.4NQO_AAACCTGCACCCAGTG.1 \
