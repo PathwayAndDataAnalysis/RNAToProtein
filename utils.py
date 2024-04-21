@@ -31,7 +31,7 @@ def get_files_in_dir(root_dir, pattern=None):
     w = walk(root_dir)
     for(dir_path, dir_names, file_names) in w:
         for file_name in file_names:
-            if type_pattern is None or not re.search(type_pattern, file_name):
+            if type_pattern is None or re.search(type_pattern, file_name):
                 file_paths.append(os.path.join(dir_path, file_name))
 
     return file_paths
